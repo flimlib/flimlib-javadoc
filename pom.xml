@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>5.8.0</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>slim-javadoc</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<name>SLIM-Curve Javadocs</name>
+	<description>All the Javadocs for SLIM-Curve.</description>
+	<inceptionYear>2015</inceptionYear>
+
+	<scm>
+		<connection>scm:git:git://github.com/slim-curve/slim-javadoc</connection>
+		<developerConnection>scm:git:git@github.com:slim-curve/slim-javadoc</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/slim-curve/slim-javadoc</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/slim-curve/slim-javadoc/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/SLIM-curve-javadoc/</url>
+	</ciManagement>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>slim-curve</groupId>
+			<artifactId>curve-fitter</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>slim-curve</groupId>
+			<artifactId>slim-curve</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<type>nar</type>
+		</dependency>
+		<dependency>
+			<groupId>slim-curve</groupId>
+			<artifactId>slim_plugin</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+</project>
