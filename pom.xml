@@ -14,6 +14,7 @@
 
 	<name>SLIM-Curve Javadocs</name>
 	<description>All the Javadocs for SLIM-Curve.</description>
+	<url>https://javadoc.scijava.org/SLIM-Curve/</url>
 	<inceptionYear>2015</inceptionYear>
 
 	<scm>
@@ -27,8 +28,8 @@
 		<url>https://github.com/slim-curve/slim-javadoc/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Jenkins</system>
-		<url>http://jenkins.imagej.net/job/SLIM-curve-javadoc/</url>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/slim-curve/slim-javadoc</url>
 	</ciManagement>
 
 	<repositories>
