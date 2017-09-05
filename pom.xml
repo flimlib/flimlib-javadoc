@@ -9,6 +9,7 @@
 		<relativePath />
 	</parent>
 
+	<groupId>slim-curve</groupId>
 	<artifactId>slim-javadoc</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
@@ -16,6 +17,41 @@
 	<description>All the Javadocs for SLIM-Curve.</description>
 	<url>https://javadoc.scijava.org/SLIM-Curve/</url>
 	<inceptionYear>2015</inceptionYear>
+	<organization>
+		<name>SLIM Curve</name>
+		<url>https://slim-curve.github.io/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>GNU General Public License v3+</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<url>http://imagej.net/User:Rueden</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
 
 	<scm>
 		<connection>scm:git:git://github.com/slim-curve/slim-javadoc</connection>
@@ -31,6 +67,14 @@
 		<system>Travis CI</system>
 		<url>https://travis-ci.org/slim-curve/slim-javadoc</url>
 	</ciManagement>
+
+	<properties>
+		<license.licenseName>gpl_v3</license.licenseName>
+		<license.copyrightOwners>Board of Regents of the University of
+Wisconsin-Madison.</license.copyrightOwners>
+
+		<enforcer.skip>true</enforcer.skip>
+	</properties>
 
 	<repositories>
 		<repository>
@@ -57,5 +101,4 @@
 			<version>LATEST</version>
 		</dependency>
 	</dependencies>
-
 </project>
