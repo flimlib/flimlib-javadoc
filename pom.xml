@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>5.8.0</version>
+		<version>RELEASE</version>
 		<relativePath />
 	</parent>
 
@@ -42,18 +42,18 @@
 		<dependency>
 			<groupId>slim-curve</groupId>
 			<artifactId>curve-fitter</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>LATEST</version>
 		</dependency>
 		<dependency>
 			<groupId>slim-curve</groupId>
 			<artifactId>slim-curve</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>LATEST</version>
 			<type>nar</type>
 		</dependency>
 		<dependency>
 			<groupId>slim-curve</groupId>
 			<artifactId>slim_plugin</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<version>LATEST</version>
 		</dependency>
 	</dependencies>
 
