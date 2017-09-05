@@ -1,9 +1,7 @@
+[![](https://travis-ci.org/slim-curve/slim-javadoc.svg?branch=master)](https://travis-ci.org/slim-curve/slim-javadoc)
+
 This project aggregates the javadoc of SLIM-Curve components.
 
 They are built and published to:
 
-* http://javadoc.imagej.net/SLIM-Curve/
-
-By the following Jenkins job:
-
-* http://jenkins.imagej.net/job/SLIM-curve-javadoc/
+* https://javadoc.scijava.org/SLIM-Curve/
