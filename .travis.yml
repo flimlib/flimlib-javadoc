@@ -4,6 +4,3 @@ branches:
   only: master
 install: true
 script: ".travis/build.sh"
-env:
-  global:
-    secure: Adm5PE56a2ns27PDt1jGfCiqO124pSBgciJM8X6kEiyWZtAxv9gRuhdUZX5b0pY+giLGbrtv+wXDEOQ/dpSEQzEC4jMLR7DBq2C5cbFvym0AvW3ZEqLizCbYE8K5dmpOGL1I6rMroQlqVK8YKEIol33QqiChJg+6xZIL6NMwVZw=
