@@ -93,7 +93,6 @@ Wisconsin-Madison.</license.copyrightOwners>
 			<groupId>slim-curve</groupId>
 			<artifactId>slim-curve</artifactId>
 			<version>LATEST</version>
-			<type>nar</type>
 		</dependency>
 		<dependency>
 			<groupId>slim-curve</groupId>
