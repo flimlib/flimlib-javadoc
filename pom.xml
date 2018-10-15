@@ -88,6 +88,12 @@ Wisconsin-Madison.</license.copyrightOwners>
 			<groupId>slim-curve</groupId>
 			<artifactId>curve-fitter</artifactId>
 			<version>LATEST</version>
+			<exclusions>
+				<exclusion>
+					<groupId>slim-curve</groupId>
+					<artifactId>slim-curve</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>slim-curve</groupId>
