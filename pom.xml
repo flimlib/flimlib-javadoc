@@ -106,4 +106,14 @@ Wisconsin-Madison.</license.copyrightOwners>
 			<version>LATEST</version>
 		</dependency>
 	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>build-javadoc</id>
+			<build>
+				<!-- TEMP: If this fixes the CI, migrate to pom-scijava-base. -->
+				<defaultGoal>package</defaultGoal>
+			</build>
+		</profile>
+	</profiles>
 </project>
