@@ -98,7 +98,7 @@ Wisconsin-Madison.</license.copyrightOwners>
 		<dependency>
 			<groupId>slim-curve</groupId>
 			<artifactId>slim-curve</artifactId>
-			<version>LATEST</version>
+			<version>1.0.0-rc-3</version>
 		</dependency>
 		<dependency>
 			<groupId>slim-curve</groupId>
