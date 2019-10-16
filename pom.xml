@@ -4,22 +4,22 @@
 
 	<parent>
 		<groupId>org.scijava</groupId>
-		<artifactId>pom-scijava</artifactId>
+		<artifactId>pom-scijava-base</artifactId>
 		<version>RELEASE</version>
 		<relativePath />
 	</parent>
 
-	<groupId>slim-curve</groupId>
-	<artifactId>slim-javadoc</artifactId>
+	<groupId>flimlib</groupId>
+	<artifactId>flimlib-javadoc</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
-	<name>SLIM-Curve Javadocs</name>
-	<description>All the Javadocs for SLIM-Curve.</description>
-	<url>https://javadoc.scijava.org/SLIM-Curve/</url>
+	<name>FLIMLib Javadocs</name>
+	<description>All the Javadocs for FLIMLib.</description>
+	<url>https://javadoc.scijava.org/FLIMLib/</url>
 	<inceptionYear>2015</inceptionYear>
 	<organization>
-		<name>SLIM Curve</name>
-		<url>https://slim-curve.github.io/</url>
+		<name>FLIMLib</name>
+		<url>https://flimlib.github.io/</url>
 	</organization>
 	<licenses>
 		<license>
@@ -49,23 +49,23 @@
 	<mailingLists>
 		<mailingList>
 			<name>Image.sc Forum</name>
-			<archive>https://forum.image.sc/tags/slim-curve</archive>
+			<archive>https://forum.image.sc/tags/flimlib</archive>
 		</mailingList>
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/slim-curve/slim-javadoc</connection>
-		<developerConnection>scm:git:git@github.com:slim-curve/slim-javadoc</developerConnection>
+		<connection>scm:git:git://github.com/flimlib/flimlib-javadoc</connection>
+		<developerConnection>scm:git:git@github.com:flimlib/flimlib-javadoc</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/slim-curve/slim-javadoc</url>
+		<url>https://github.com/flimlib/flimlib-javadoc</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/slim-curve/slim-javadoc/issues</url>
+		<url>https://github.com/flimlib/flimlib-javadoc/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.org/slim-curve/slim-javadoc</url>
+		<url>https://travis-ci.com/flimlib/flimlib-javadoc</url>
 	</ciManagement>
 
 	<properties>
@@ -73,7 +73,9 @@
 		<license.copyrightOwners>Board of Regents of the University of
 Wisconsin-Madison.</license.copyrightOwners>
 
-		<enforcer.skip>true</enforcer.skip>
+		<flimj-ops.version>RELEASE</flimj-ops.version>
+		<flimj-ui.version>RELEASE</flimj-ui.version>
+		<flimlib.version>RELEASE</flimlib.version>
 	</properties>
 
 	<repositories>
@@ -85,35 +87,30 @@ Wisconsin-Madison.</license.copyrightOwners>
 
 	<dependencies>
 		<dependency>
-			<groupId>slim-curve</groupId>
-			<artifactId>curve-fitter</artifactId>
-			<version>LATEST</version>
-			<exclusions>
-				<exclusion>
-					<groupId>slim-curve</groupId>
-					<artifactId>slim-curve</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>flimlib</groupId>
+			<artifactId>flimj-ops</artifactId>
+			<version>${flimj-ops.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>slim-curve</groupId>
-			<artifactId>slim-curve</artifactId>
-			<version>1.0.0-rc-3</version>
+			<groupId>flimlib</groupId>
+			<artifactId>flimj-ui</artifactId>
+			<version>${flimj-ui.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>slim-curve</groupId>
-			<artifactId>slim_plugin</artifactId>
-			<version>LATEST</version>
+			<groupId>flimlib</groupId>
+			<artifactId>flimlib</artifactId>
+			<version>${flimlib.version}</version>
 		</dependency>
 	</dependencies>
 
-	<profiles>
-		<profile>
-			<id>build-javadoc</id>
-			<build>
-				<!-- TEMP: If this fixes the CI, migrate to pom-scijava-base. -->
-				<defaultGoal>package</defaultGoal>
-			</build>
-		</profile>
-	</profiles>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<skipIfEmpty>false</skipIfEmpty>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
