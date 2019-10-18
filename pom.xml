@@ -4,7 +4,7 @@
 
 	<parent>
 		<groupId>org.scijava</groupId>
-		<artifactId>pom-scijava-base</artifactId>
+		<artifactId>pom-scijava</artifactId>
 		<version>RELEASE</version>
 		<relativePath />
 	</parent>
