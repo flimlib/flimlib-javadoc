@@ -69,6 +69,7 @@
 	</ciManagement>
 
 	<properties>
+		<automatic-module-name>flimlib.javadoc</automatic-module-name>
 		<license.licenseName>gpl_v3</license.licenseName>
 		<license.copyrightOwners>Board of Regents of the University of
 Wisconsin-Madison.</license.copyrightOwners>
